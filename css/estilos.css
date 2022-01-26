@@ -1,20 +1,25 @@
-* {
-  outline: 1px solid #ff009926;
+/* *{
+    outline: 1px solid #ff009926;
+} */
+body {
+  background-color: black;
 }
 
 .index {
-  height: 800px;
+  height: 1200px;
   background-color: black;
 }
 
 .logo {
-  max-width: 37%;
-  margin: auto;
+  width: 100%;
+  max-width: 270px;
+  margin: 70px auto;
 }
 
 .pelota {
-  max-width: 37%;
-  margin: auto;
+  width: 100%;
+  max-width: 500px;
+  margin: 40px auto;
 }
 
 .hero {
@@ -27,6 +32,56 @@
 
 .buttonOne {
   border-radius: 30px;
-  padding: 3px 42px;
+  padding: 0px 32px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.display {
+  height: 800px;
+  /* color: white; */
+  color: black;
+  background-color: black;
+  font-size: 30px;
+}
+
+.displayTitle {
   font-weight: bold;
+}
+
+.displayText {
+  max-width: 70%;
+  text-align: start;
+}
+
+.mainPic1 {
+  background-image: url("../media/tribuna2.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.mainPic2 {
+  background: url("../media/contrato.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.mainPic3 {
+  background: url("../media/oficina.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.footer {
+  background-color: black;
+  font-size: 12.5px;
+}
+
+.footer div div {
+  display: flex;
+  justify-content: center;
+}
+
+.footer p {
+  margin-bottom: 0;
 }
