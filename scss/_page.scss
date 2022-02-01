@@ -1,0 +1,57 @@
+.introduccion {
+  margin-top: 8rem;
+  height: 100vh;
+  padding-bottom: 65rem;
+}
+
+.intro-title {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  font-style: italic;
+  font-weight: 700;
+  color: $color-principal;
+}
+
+.intro-text {
+  font-size: 22px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: $font-color;
+}
+@media (min-width: 990px) {
+  .intro-title {
+    font-size: 3rem;
+  }
+  .intro-text {
+    padding: 3.5rem;
+  }
+  .introduccion {
+    max-width: 830px;
+  }
+}
+
+.seccion-ia {
+  background: url("../media//pelotafondo.jpg");
+  height: 100vh;
+}
+
+.ia-title h2 {
+  font-size: 6.5rem;
+  text-transform: uppercase;
+  font-style: italic;
+  font-weight: 700;
+  color: $color-principal;
+}
+
+.ia-title h3 {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  font-style: italic;
+  font-weight: 700;
+  color: $color-principal;
+}
+
+.ia-text {
+  color: $font-color;
+  width: 500px;
+  font-size: 1.2rem;
+}

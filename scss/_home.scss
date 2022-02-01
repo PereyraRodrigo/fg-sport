@@ -1,75 +1,73 @@
 /* *{
     outline: 1px solid #ff009926;
 } */
-body{
-    background-color: black;
+body {
+  background-color: black;
 }
-.index{
-    height: 1200px;
-    background-color: black;
+.index {
+  height: 1200px;
+  background-color: black;
 }
-.logo{
-    width: 100%;
-    max-width: 270px;
-    margin: 70px auto;
+.logo {
+  width: 100%;
+  max-width: 270px;
+  margin: 70px auto;
 }
-.pelota{
-    width: 100%;
-    max-width: 500px;
-    margin: 40px auto;
+.pelota {
+  width: 100%;
+  max-width: 500px;
+  margin: 40px auto;
 }
-.hero{
-    height: 320px;
+.hero {
+  height: 320px;
 }
-.green{
-    background-color: #c3ff00;
+.green {
+  background-color: $color-principal;
 }
-.buttonOne{
-    border-radius: 30px;
-    padding: 0px 32px;
-    text-align: center;
-    font-size: 18px;
+.buttonOne {
+  border-radius: 30px;
+  padding: 0px 32px;
+  text-align: center;
+  font-size: 18px;
 }
-.display{
-    height: 800px;
-    /* color: white; */
-    color: black;
-    background-color: black;
-    font-size: 30px;
-    &Title{
-        font-weight: bold;
-    }
-    &Text{
-        max-width: 70%;
-        text-align: start;
-    }
+.display {
+  height: 800px;
+  background-color: black;
+  font-size: 30px;
+  &Title {
+    font-weight: bold;
+  }
+  &Text {
+    max-width: 70%;
+    text-align: start;
+  }
 }
-.mainPic1{
-    background-image: url("../media/tribuna2.jpg");
-    background-position: center ;
-    background-size: cover;
+.mainPic1 {
+  background-image: url("../media/tribuna2.jpg");
+  background-position: center;
+  background-size: cover;
 }
-.mainPic2{
-    background: url("../media/contrato.jpg");
-    background-position: center ;
-    background-size: cover;
+.mainPic2 {
+  background: url("../media/contrato.jpg");
+  background-position: center;
+  background-size: cover;
 }
-.mainPic3{
-    background: url("../media/oficina.jpg");
-    background-position: center ;
-    background-size: cover;
+.mainPic3 {
+  background: url("../media/oficina.jpg");
+  background-position: center;
+  background-size: cover;
 }
 
-.footer{
-    background-color: black;
-    font-size: 12.5px;
-    div{
-        div{
-            display: flex;
-            justify-content: center;
-        }
+.footer {
+  background-color: black;
+  font-size: 12.5px;
+  div {
+    div {
+      display: flex;
+      justify-content: center;
     }
-    p{
-        margin-bottom: 0;
-    }
+  }
+  p {
+    margin-bottom: 0;
+  }
 }
