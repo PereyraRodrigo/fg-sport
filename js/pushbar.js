@@ -94,11 +94,11 @@ const changeButton = (className, text) => {
 };
 
 //Si dice "ver mas", lo abre, y si dice "ver menos", lo cierra, luego cambia el texto
-buttonContainer.addEventListener("click", (e) => {
-  if (e.target.classList.contains("buttonOne")) {
+buttonContainer.addEventListener("click", ({target}) => {
+  if (target.classList.contains("buttonOne")) {
     pushbar.open("pushbar-menu");
     changeButton("buttonTwo", "Ver menos");
-  } else if (e.target.classList.contains("buttonTwo")) {
+  } else if (target.classList.contains("buttonTwo")) {
     pushbar.close();
     changeButton("buttonOne", "Ver mas");
   }
