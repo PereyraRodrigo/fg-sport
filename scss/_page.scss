@@ -30,8 +30,10 @@
 }
 
 .seccion-ia {
-  background: url("../media//pelotafondo.jpg");
   height: 100vh;
+  background: url("../media//pelotafondo.jpg");
+  background-position: center;
+  background-size: cover;
 }
 
 .ia-title h2 {
