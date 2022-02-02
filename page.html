@@ -10,6 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="bootstrapCompiled/css/bootstrap.css" />
     <link rel="stylesheet" href="css/estilos.css" />
+    <link rel="stylesheet" href="/css/pushbar.css" />
     <title>fg sports</title>
   </head>
   <body>
@@ -53,6 +54,13 @@
       </section>
       <section class="seccion-ia">
         <div class="container d-flex flex-column justify-content-center">
+          <div
+            data-pushbar-id="pushbar-menu"
+            data-pushbar-direction="right"
+            class="pushbar pushbar-menu"
+          >
+            <h1>Hola mundo</h1>
+          </div>
           <div class="ia-title p-3">
             <h2>La ia</h2>
             <h3>que lo ve todo</h3>
@@ -63,7 +71,7 @@
               presupuesto y calidad. Mejores Búsquedas para mejores resultados.
             </p>
           </div>
-          <div>
+          <div id="btn-pushbar">
             <button class="btn buttonOne green fs-4 fw-bolder">Ver mas</button>
           </div>
         </div>
@@ -85,7 +93,7 @@
         </div>
       </div>
     </footer>
-
     <script src="bootstrapCompiled/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/pushbar.js"></script>
   </body>
 </html>
