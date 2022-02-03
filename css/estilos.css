@@ -203,7 +203,7 @@ body {
 }
 
 .s-wrap .s-item-1 {
-  background-image: url("../media/oficina.jpg");
+  background-image: url("../media/jugadores.jpg");
   background-position: center;
   background-size: cover;
 }
@@ -371,7 +371,13 @@ body {
 .s-type-1 .s-nav-right {
   color: #c3ff00;
   width: 45px;
-  background-color: white;
+  transform: rotate(90deg);
+}
+
+.s-type-1 .s-nav-left {
+  color: #c3ff00;
+  width: 45px;
+  transform: rotate(-90deg);
 }
 
 .s-type-1 #s-1:checked ~ .s-content {
@@ -435,4 +441,68 @@ body {
   82% {
     transform: translateX(-33.33333%);
   }
+}
+
+.nav-dots {
+  position: fixed;
+  top: 50%;
+  left: 5%;
+  transform: translateY(-50%);
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+.nav-dot {
+  width: 12px;
+  height: 12px;
+  border: 2px solid #c3ff00;
+  border-radius: 50%;
+  list-style: none;
+  background: transparent;
+  transition: all 0.3s;
+}
+
+.nav-dot:not(:last-of-type) {
+  margin-bottom: 20px;
+}
+
+.nav-dot:hover, .nav-dot.is-active {
+  transform: scale(1.8);
+  background: #c3ff00;
+}
+
+.section {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  height: 100vh;
+}
+
+.section:nth-of-type(1) {
+  background-image: url(/media/background1.jpg);
+  background-position: center;
+}
+
+.section:nth-of-type(2) {
+  background-image: url(/media/background1b.jpg);
+}
+
+.section:nth-of-type(3) {
+  background-color: #ffc952;
+}
+
+.section:nth-of-type(4) {
+  background-color: #ff7473;
+}
+
+.section:nth-of-type(5) {
+  background-color: #ffc952;
+}
+
+.section__heading {
+  margin: 0;
+  color: white;
+  font-size: 32px;
+  text-transform: capitalize;
 }

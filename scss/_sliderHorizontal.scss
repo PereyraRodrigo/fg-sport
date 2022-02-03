@@ -2,7 +2,7 @@ $switch-speed: 1s;
 $slider-number: 3;
 $slider-width: 100% / $slider-number;
 
-$image1: '../media/oficina.jpg';
+$image1: '../media/jugadores.jpg';
 $image2: '../media/monchi2.jpg';
 $image3: '../media/tribuna.jpg';
 
@@ -211,7 +211,12 @@ $image3: '../media/tribuna.jpg';
     &-right{
         color: $color-principal;
         width: 45px;
-        background-color: white;
+        transform: rotate(90deg);
+    }
+    &-left{
+        color: $color-principal;
+        width: 45px;
+        transform: rotate(-90deg);
     }
   }
 
