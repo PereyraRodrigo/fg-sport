@@ -1,53 +1,34 @@
-class Slider {
-    constructor(options) {
-        this.sections = document.querySelectorAll(options.section);
-        this.navigation = document.querySelector(options.dots);
+const sliderContainer = document.querySelector(".slider-container");
+const slideRight = document.querySelector(".right-slide");
+const slideLeft = document.querySelector(".left-slide");
+const upButton = document.querySelector(".up-button");
+const downButton = document.querySelector(".down-button");
+const slidesLength = slideRight.querySelectorAll(".slideSelect").length;
 
-        this.navigation.addEventListener('click', this.scrollToSection.bind(this));
-        window.addEventListener('scroll', this.setDotStatus.bind(this));
-    }
+let activeSlideIndex = 0;
 
-    removeDotStyles() {
-        const dots = this.navigation;
-        const is_active = dots.querySelector('.is-active');
+/* slideLeft.style.top = `-${(slidesLength - 1) * 100}vh`; */
 
-        if (is_active != null) {
-            is_active.classList.remove('is-active');
+upButton.addEventListener("click", () => changeSlide("up"));
+downButton.addEventListener("click", () => changeSlide("down"));
+
+const changeSlide = (direction) => {
+    const sliderHeight = sliderContainer.clientHeight;
+    if (direction === "up") {
+        activeSlideIndex++;
+        if (activeSlideIndex > slidesLength - 1) {
+            activeSlideIndex = 0;
+        }
+    } else if (direction === "down") {
+        activeSlideIndex--;
+        if (activeSlideIndex < 0) {
+            activeSlideIndex = slidesLength - 1;
         }
     }
 
-    setDotStatus() {
-        const scroll_position = window.scrollY;
-        const dots = Array.from(this.navigation.children);
-
-        this.sections.forEach((section, index) => {
-            const half_window = window.innerHeight / 2;
-            const section_top = section.offsetTop;
-
-            if (scroll_position > section_top - half_window && scroll_position < section_top + half_window) {
-                this.removeDotStyles();
-                dots[index].classList.add('is-active');
-            }
-        })
-    }
-
-    scrollToSection(e) {
-        const dots = Array.from(this.navigation.children);
-        const window_height = window.innerHeight;
-
-        dots.forEach((dot, index) => {
-            if (dot == e.target) {
-
-                window.scrollTo({
-                    top: window_height - window_height * index,
-                    behavior: 'smooth',
-                });
-            }
-        });
-    }
-}
-
-new Slider({
-    section: '.section',
-    dots: '#js-dots',
-});
+    slideRight.style.transform = `translateY(-${activeSlideIndex * sliderHeight
+        }px)`;
+    /* slideLeft.style.transform = `translateY(${
+      activeSlideIndex * sliderHeight
+    }px)`; */
+};
