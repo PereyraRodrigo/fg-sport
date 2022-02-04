@@ -4,6 +4,7 @@
 body {
   background-color: black;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 main {
@@ -62,19 +63,34 @@ main {
   }
 }
 .mainPic1 {
-  background-image: url("../media/tribuna2.jpg");
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../media/tribuna2.jpg");
   background-position: center;
   background-size: cover;
+  &:hover .displayText {
+    height: 70%;
+    opacity: 1;
+  }
 }
 .mainPic2 {
-  background: url("../media/contrato.jpg");
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../media/contrato.jpg");
   background-position: center;
   background-size: cover;
+  &:hover .displayText {
+    height: 80%;
+    opacity: 1;
+  }
 }
 .mainPic3 {
-  background: url("../media/oficina.jpg");
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../media/oficina.jpg");
   background-position: center;
   background-size: cover;
+  &:hover .displayText {
+    height: 65%;
+    opacity: 1;
+  }
 }
 
 .displayTitle {
@@ -86,6 +102,15 @@ main {
   max-width: 70%;
   text-align: start;
   color: $font-color;
+  font-size: 1rem;
+  height: 0;
+  opacity: 0;
+  transition: 0.5s ease;
+}
+@media (max-width: 1070px) {
+  .displayText {
+    font-size: 40% !important;
+  }
 }
 
 .footer {
