@@ -55,8 +55,7 @@
   }
 }
 
-
-.verticalSlider{
+.verticalSlider {
   overflow-x: hidden;
 }
 
@@ -67,14 +66,14 @@
   text-transform: capitalize;
 }
 
-.slider-container {
+.slider-containerB {
   position: relative;
   overflow: hidden;
   width: 100vw;
   height: 100vh;
 }
 
-.left-slide {
+.left-slideB {
   height: 100%;
   width: 15%;
   position: absolute;
@@ -83,7 +82,7 @@
   transition: transform 0.5s ease-in-out;
 }
 
-.left-slide > div {
+.left-slideB > div {
   height: 100%;
   width: 100%;
   display: flex;
@@ -93,7 +92,7 @@
   color: #fff;
 }
 
-.left-slide p {
+.left-slideB p {
   font-size: 20px;
   margin-bottom: 10px;
   margin-top: -30px;
@@ -105,24 +104,44 @@
   font-family: $font-titleItalic;
   font-size: 3.9rem !important;
 }
-.left-text{
+.left-text {
   background-color: transparent;
 }
-.right-slide {
+.right-slideB {
+    font-size: 16px;
   height: 100%;
   /* position: absolute; */
   top: 0;
   /* left: 15%;
-  width: 85%; */
+    width: 85%; */
   width: 100%;
   transition: transform 0.5s ease-in-out;
-  p{
+  p {
     color: white;
-    font-size: 15px;
+    font-size: 1.125em;
   }
 }
-
-.right-slide > div {
+@media (max-width: 730px){
+    .right-slideB{
+        font-size: 15px;
+    }
+}
+@media (max-width: 608px){
+    .right-slideB{
+        font-size: 14px;
+    }
+}
+@media (max-width: 571px){
+    .right-slideB{
+        font-size: 12px;
+    }
+}
+@media (max-width: 463px){
+    .right-slideB{
+        font-size: 10px;
+    }
+}
+.right-slideB > div {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -130,92 +149,87 @@
   width: 100%;
 }
 
-.slideOne{
-  background-image: url('/media/background1.jpg');
-  p{
-    font-size: 14px;
-  }
+.slideUno {
+  background-image: url("/media/background1.jpg");
 }
-.slideTwo{
-  background-image: url('/media/background1b.jpg');
+.slideDos {
+  background-image: url("/media/background1b.jpg");
+}
+.slideTres {
+  background-image: url("/media/background1.jpg");
+}
+.slideCuatro {
+  background-image: url("/media/background1b.jpg");
   img{
-    min-width: 980px;
-  }
-  p{
-    max-width: 45%;
-    text-align: center;
-    margin: auto;
+    min-width: 1010px;
   }
 }
-.slideThree{
-  background-image: url('/media/background3.jpg');
+.slideCinco {
+  background-image: url("/media/background3.jpg");
   &Image{
-    background-image: url("/media/data1.jpg");
-    background-size: contain;
+      background-image: url("/media/data1.jpg");
+      background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
   }
 }
-.slideFour{
-  background-image: url('/media/background3b.jpg');
+.slideSeis {
+  background-image: url("/media/background3b.jpg");
   &Image{
     background-image: url("/media/data2.jpg");
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-  }
 }
-.slideFive{
-  background-image: url('/media/background3.jpg');
+}
+.slideSiete {
+  background-image: url("/media/background3.jpg");
   &Image{
     background-image: url("/media/data3.jpg");
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
+}
+}
+.slideOcho {
+  background-image: url("/media/background2.jpg");
+  img{
+    min-width: 610px;
   }
 }
-.slideSix{
-  background-image: url('/media/background2.jpg');
+.slideNueve {
+  background-image: url("/media/background2.jpg");
 }
-@media (max-width: 576px){
-  .slideOne p {
-    font-size: 1.64vw;
-  }
-}
-@media (max-width: 1604px){
-  .slideOne p {
-    font-size: 11px;
-  }
-}
-.slider-container .action-buttons img {
+
+.slider-containerB .action-buttonsB img {
   position: absolute;
   left: 6.3%;
   top: 50%;
   z-index: 100;
 }
-.action-buttons{
-  img{
+.action-buttonsB {
+  img {
     width: 45px;
     cursor: pointer;
   }
 }
-.slider-container .action-buttons .down-button {
+.slider-containerB .action-buttonsB .down-buttonB {
   transform: translateY(-650%) rotate(0deg);
 }
 
-.slider-container .action-buttons .up-button {
+.slider-containerB .action-buttonsB .up-buttonB {
   transform: translateY(450%) rotate(-180deg);
 }
 
-.vertical{
-  &Title{
+.vertical {
+  &Title {
     color: $color-principal !important;
     font-family: $font-titleItalic;
   }
-  &Grafico{
+  &Grafico {
     min-width: 1170px;
   }
-  &Scroll{
+  &Scroll {
     overflow-x: scroll;
   }
 }
