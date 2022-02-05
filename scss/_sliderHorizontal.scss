@@ -235,32 +235,3 @@ $image3: "../media/tribuna.jpg";
     }
   }
 }
-
-.s-type-2 {
-  .s-content {
-    animation: slider-animation 50s ease-in-out infinite;
-
-    &:hover {
-      animation-play-state: paused;
-    }
-  }
-}
-
-@keyframes slider-animation {
-  $i: 0;
-  $j: 0;
-  $times: ($slider-number - 1) * 2;
-  @while $i < 100 {
-    #{$i}%,
-    #{$i + 7}% {
-      @if $i < 50 {
-        transform: translateX(-$slider-width * $j);
-      } @else {
-        transform: translateX(-$slider-width * ($times - $j));
-      }
-    }
-
-    $i: $i + 100 / $times;
-    $j: $j + 1;
-  }
-}
