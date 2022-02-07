@@ -1,5 +1,5 @@
 .introduccion {
-  margin-top: 8rem;
+  margin-top: 5rem;
 }
 
 .intro-flecha {
@@ -33,7 +33,12 @@
 
 .seccion-ia {
   height: 100vh;
-  background: url("../media//pelotafondo.jpg");
+  background: linear-gradient(
+      0deg,
+      rgba(65, 64, 64, 0.5),
+      rgba(58, 57, 57, 0.5)
+    ),
+    url("../media//pelotafondo.jpg");
   background-position: center;
   background-size: cover;
   position: relative;
@@ -59,7 +64,7 @@
   color: $font-color;
   width: 500px;
   font-size: 1.2rem;
-  font-weight: 700;
+  font-weight: 500;
 }
 // @media (max-width: )
 
@@ -79,6 +84,7 @@
   width: 40%;
   background-color: rgba(255, 255, 255, 0.2);
 }
+// @media(max-width: )
 
 .pushbar-open {
   opacity: 1;
@@ -90,7 +96,8 @@
 }
 .seccion-data {
   height: 100vh;
-  background: url("../media/cancha.jpg");
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../media/cancha.jpg");
   background-position: center;
   background-size: cover;
 }
@@ -125,7 +132,7 @@
     left: 0;
     top: -32px;
     z-index: 1000;
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: white;
   }
   .pushbar-open {

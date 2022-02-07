@@ -15,6 +15,21 @@ main {
   height: 100vh;
   background-color: black;
 }
+@media (max-height: 885px) {
+  .index {
+    height: 115vh;
+  }
+}
+@media (max-height: 800px) {
+  .index {
+    height: 125vh;
+  }
+}
+@media (max-height: 740px) {
+  .index {
+    height: 155vh;
+  }
+}
 .logo {
   width: 100%;
   max-width: 270px;
