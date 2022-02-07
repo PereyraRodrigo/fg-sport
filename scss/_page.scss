@@ -36,6 +36,7 @@
   background: url("../media//pelotafondo.jpg");
   background-position: center;
   background-size: cover;
+  position: relative;
 }
 
 .ia-title h2 {
@@ -58,7 +59,9 @@
   color: $font-color;
   width: 500px;
   font-size: 1.2rem;
+  font-weight: 700;
 }
+// @media (max-width: )
 
 .buttonTwo {
   border-radius: 30px;
@@ -69,49 +72,59 @@
 
 .pushbar {
   position: absolute;
-  right: -100%;
-  transition: 2s ease;
+  opacity: 0;
+  right: 0;
+  transition: 0.5s ease;
   height: 100%;
   width: 40%;
   background-color: rgba(255, 255, 255, 0.2);
 }
 
 .pushbar-open {
-  right: 0;
+  opacity: 1;
   transition: 1s ease;
 }
 
 .ia {
   transition: 1.7s;
 }
-.seccion-data{
+.seccion-data {
   height: 100vh;
   background: url("../media/cancha.jpg");
   background-position: center;
   background-size: cover;
 }
-.data-title{
-  p{
+.data-title {
+  p {
     font-family: $font-titleItalic;
     color: $color-principal;
     font-size: 90px;
     margin-bottom: 0;
-    &:nth-child(2){
+    &:nth-child(2) {
       font-size: 50px;
     }
   }
 }
-.data-text{
+@media (max-width: 480px) {
+  .data-title p {
+    font-size: 70%;
+  }
+}
+.data-text {
   color: white;
   max-width: 500px;
   font-size: 1.2rem;
 }
 @media (max-width: 992px) {
   .seccion-ia {
-    height: 60vh;
+    height: 100vh;
   }
   .close {
     display: block !important;
+    position: absolute;
+    left: 0;
+    top: -32px;
+    z-index: 1000;
     font-size: 3rem;
     color: white;
   }
@@ -119,8 +132,18 @@
     right: 0;
     width: 100%;
   }
+  .ia-text {
+    font-size: 95% !important;
+    width: 70%;
+  }
   .ia-content {
     transform: translatex(-100%);
     transition: 1s ease;
+  }
+}
+
+@media (max-height: 832px) {
+  .seccion-ia {
+    height: 140vh;
   }
 }

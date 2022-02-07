@@ -12,7 +12,7 @@ main {
 }
 
 .index {
-  height: 1200px;
+  height: 100vh;
   background-color: black;
 }
 .logo {
@@ -20,46 +20,44 @@ main {
   max-width: 270px;
   margin: 70px auto;
 }
-.indexText{
-  position: absolute;
-  width: 100%;
-  bottom: 14%;
+.indexText {
+  text-align: center;
   align-items: center;
   display: flex;
   flex-direction: column;
-  p{
+  p {
     position: relative;
     margin: auto;
   }
 }
 .pelota {
   width: 100%;
+  margin-bottom: 5rem !important;
   max-width: 500px;
+  // margin-top: 6rem !important;
   margin: 40px auto;
   animation-name: anima;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
   animation-duration: 14s;
 }
-@keyframes anima{
-  0%{
-      top: 0;
+@keyframes anima {
+  0% {
+    top: 0;
   }
-  25%{
-      top: 50%;
-      /* transform: rotate(-5deg); */
+  25% {
+    transform: translateY(15%);
   }
-  50%{
-      top: 100%;
-      margin-top: -50px;
-      transform: rotate(-10deg);
+  50% {
+    transform: translateY(50%);
+    transform: rotate(-10deg);
   }
-  75%{
-      top: 50%;
-      /* transform: rotate(-15deg); */
+  75% {
+    transform: translateY(15%);
+    /* transform: rotate(-15deg); */
   }
-  100%{
-      top: 0;
+  100% {
+    top: 0;
   }
 }
 .hero {

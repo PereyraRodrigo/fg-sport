@@ -2,12 +2,17 @@ $switch-speed: 1s;
 $slider-numberPushbar: 6;
 $slider-width: 100% / $slider-numberPushbar;
 
+#sliderPushbar {
+  height: 100%;
+}
+
 #sliderPushbar .s-wrapB {
   width: 100%;
   /* margin-bottom: 50px; */
   padding-bottom: 34%;
   position: relative;
-  background-color: black;
+  height: 100%;
+  text-align: center;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   overflow: hidden;
   min-height: 629px;
@@ -37,35 +42,32 @@ $slider-width: 100% / $slider-numberPushbar;
   }
 
   .s-item-1B {
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15)),
-      #8e6bc9;
-    background-position: center;
-    background-size: cover;
     p {
+      margin-top: 3rem !important;
       position: absolute;
       font-size: 17px;
     }
     p:nth-child(1) {
       top: 10%;
-      left: 8%;
+      left: 7%;
       transform: translateX(-40%);
       color: #c3ff00;
       font-family: $font-titleItalic;
       margin-top: 16px;
     }
+
     p:nth-child(2) {
       color: white;
       left: 2%;
-      top: 32%;
+      top: 22%;
       max-width: 12%;
       text-align: start;
       transform: translateX(2%);
     }
   }
   .s-item-2B {
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15)),
-      #8e6bc9;
     p {
+      margin-top: 3rem !important;
       position: absolute;
       font-size: 16px;
     }
@@ -80,48 +82,58 @@ $slider-width: 100% / $slider-numberPushbar;
     p:nth-child(2) {
       color: white;
       left: 16%;
-      top: 28%;
+      top: 20%;
       max-width: 13%;
       text-align: start;
       transform: translateX(19%);
     }
   }
   .s-item-3B {
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15)),
-      #8e6bc9;
     p {
+      margin-top: 3rem !important;
       position: absolute;
-      font-size: 17px;
+      text-align: center;
+      margin-left: 0 !important;
     }
     p:nth-child(1) {
       top: 10%;
-      left: 39%;
+      left: 36%;
       color: #c3ff00;
       font-family: $font-titleItalic;
       margin-top: 16px;
       transform: translateX(15%);
     }
     img {
-      max-width: 451px;
       position: absolute;
-      left: 38%;
+      left: 36%;
       top: 60%;
       &:nth-child(2) {
-        left: 38%;
+        left: 36%;
         top: 26%;
+      }
+    }
+    @media (max-width: 1220px) {
+      p:nth-child(1) {
+        left: 35%;
+      }
+      img {
+        left: 35%;
+        width: 300px;
+        &:nth-child(2) {
+          left: 35%;
+        }
       }
     }
   }
   .s-item-4B {
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15)),
-      #8e6bc9;
     p {
+      margin-top: 3rem !important;
       position: absolute;
       font-size: 17px;
     }
     p:nth-child(1) {
       top: 10%;
-      left: 54%;
+      left: 51%;
       transform: translateX(24%);
       color: #c3ff00;
       font-family: $font-titleItalic;
@@ -138,15 +150,19 @@ $slider-width: 100% / $slider-numberPushbar;
     }
     img {
       position: absolute;
-      max-width: 520px;
-      top: 48%;
-      left: 54%;
+      top: 53%;
+      left: 53%;
+    }
+    @media (max-width: 1330px) {
+      img {
+        width: 300px;
+        top: 62%;
+      }
     }
   }
   .s-item-5B {
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15)),
-      #8e6bc9;
     p {
+      margin-top: 3rem !important;
       position: absolute;
       font-size: 17px;
     }
@@ -161,22 +177,21 @@ $slider-width: 100% / $slider-numberPushbar;
     p:nth-child(2) {
       color: white;
       left: 68%;
-      top: 28%;
+      top: 20%;
       max-width: 13%;
       text-align: center;
       transform: translateX(3%);
     }
   }
   .s-item-6B {
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15)),
-      #8e6bc9;
     p {
+      margin-top: 3rem !important;
       position: absolute;
       font-size: 17px;
     }
     p:nth-child(1) {
       top: 10%;
-      left: 89%;
+      left: 87%;
       color: #c3ff00;
       font-family: $font-titleItalic;
       margin-top: 16px;
@@ -185,7 +200,7 @@ $slider-width: 100% / $slider-numberPushbar;
     p:nth-child(2) {
       color: white;
       left: 85%;
-      top: 28%;
+      top: 20%;
       max-width: 13%;
       text-align: center;
     }
@@ -194,7 +209,7 @@ $slider-width: 100% / $slider-numberPushbar;
 #sliderPushbar .s-type-1B {
   .s-controlB {
     position: absolute;
-    top: 45px;
+    top: 55px;
     left: 50%;
     text-align: center;
     transform: translateX(-50%);
@@ -218,7 +233,7 @@ $slider-width: 100% / $slider-numberPushbar;
 
   .s-navB {
     position: absolute;
-    top: 28px;
+    top: 45px;
     left: 50%;
     text-align: center;
     transform: translateX(-50%);
