@@ -34,3 +34,12 @@ const goPreviousPage = e => {
 btnInicio.addEventListener('click', goNextPage);
 btnIntro.addEventListener('click', goPreviousPage);
 
+
+
+
+
+
+
+
+
+
