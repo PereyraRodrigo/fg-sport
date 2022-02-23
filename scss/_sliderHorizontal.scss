@@ -53,6 +53,7 @@ $image3: "../media/tribuna.jpg";
   .s-item-2 {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
       url($image2);
+      background-size: cover;
     p {
       position: absolute;
       font-size: 17px;
@@ -74,8 +75,8 @@ $image3: "../media/tribuna.jpg";
     }
   }
   .s-item-3 {
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url($image3);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url($image3);
+    background-position: center;
     p {
       position: absolute;
       font-size: 17px;
