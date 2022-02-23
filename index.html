@@ -11,7 +11,7 @@
     <link rel="shortcut icon" href="/media/logowhite.ico" type="image/x-icon" />
     <link rel="stylesheet" href="bootstrapCompiled/css/bootstrap.css" />
     <link rel="stylesheet" href="css/estilos.css" />
-    <title>fg sports</title>
+    <title>FG sports</title>
   </head>
 
   <body>
@@ -477,8 +477,13 @@
             Estudiantes de La Plata.
           </p>
           <div id="btn-pushbar">
-            <button class="btn buttonOne green fs-4 fw-bolder">
-              <a href="#slider-vertical" class="text-dark text-decoration-none"
+            <button onclick="showDesktopSlider()" class="btn buttonOne green fs-4 fw-bolder d-none d-lg-block">
+              <a class="text-dark text-decoration-none"
+                >Ver más</a
+              >
+            </button>
+            <button onclick="showMobileSlider()" class="btn buttonOne green fs-4 fw-bolder d-lg-none">
+              <a class="text-dark text-decoration-none"
                 >Ver más</a
               >
             </button>
@@ -487,7 +492,7 @@
       </section>
 
       <!--Slider Desktop-->
-      <section id="slider-vertical" class="verticalSlider d-none d-lg-block">
+      <section id="verticalSliderDesktop" class="verticalSlider">
         <div class="slider-container">
           <div class="left-slide">
             <div class="left-text">
@@ -644,7 +649,7 @@
       <!--Slider Desktop-->
 
       <!--Slider Mobile-->
-      <section class="verticalSlider d-lg-none">
+      <section id="verticalSliderMobile" class="verticalSlider">
         <div class="slider-containerB">
           <div class="left-slideB">
             <div class="left-text">
@@ -824,16 +829,16 @@
 
     <footer class="container footer">
       <div class="row text-white my-5 lh-lg">
-        <div class="col-md-3">
+        <div class="col-md-3 my-2">
           <p class="text-center">FG SPORT <br />hermidafrancisco@hotmail.com</p>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-3 my-2">
           <p>FRANCISCO HERMIDA <br />+54 9 22 3536 1870</p>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-3 my-2">
           <p>PABLO SUSVIELLES <br />+54 9 11 3273 5548</p>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-3 my-2">
           <p>GASTÓN AURIA <br />+54 9 11 5769 4638</p>
         </div>
       </div>
@@ -842,6 +847,7 @@
     <script src="bootstrapCompiled/js/bootstrap.bundle.min.js"></script>
     <script src="js/app.js"></script>
     <script src="js/pushbar.js"></script>
+    <script src="js/sliderHorizontal.js"></script>
     <script src="js/sliderVertical.js"></script>
     <script src="js/sliderVerticalMobile.js"></script>
   </body>

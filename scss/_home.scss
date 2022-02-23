@@ -14,6 +14,7 @@ main {
 .index {
   height: 100vh;
   background-color: black;
+  margin-bottom: 40px;
 }
 @media (max-height: 885px) {
   .index {
@@ -112,6 +113,9 @@ main {
     max-width: 70%;
     text-align: start;
   }
+  div{
+    min-height: 470px;
+  }
 }
 .mainPic1 {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
@@ -156,11 +160,16 @@ main {
   font-size: 1rem;
   height: 0;
   opacity: 0;
-  transition: 0.5s ease;
+  transition: 0.9s ease;
 }
 @media (max-width: 1070px) {
   .displayText {
     font-size: 40% !important;
+  }
+}
+@media (max-width: 768px){
+  #first-page{
+    margin-bottom: 660px;
   }
 }
 
