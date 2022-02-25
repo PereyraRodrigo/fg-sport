@@ -205,6 +205,113 @@ main {
   margin-bottom: 0;
 }
 
+.wrapper {
+  width: 600px;
+  height: 300px;
+  position: relative;
+  background-color: var(--wrapper-background-c);
+  box-shadow: 0 0 80px var(--wrapper-shadow-c);
+}
+
+/* Images Area */
+.images-area {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  overflow: hidden;
+}
+
+.images-area img {
+  width: 100%;
+  transition: 0.3s cubic-bezier(0.79, 0.03, 0, 0.99);
+}
+
+/* Buttons Area  */
+.buttons-area {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.buttons-area > div {
+  color: var(--white-c);
+  background-color: var(--buttons-background-c);
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+/* Buttons | Previous And Next */
+.buttons-area > div:first-child {
+  border-radius: 0 5px 5px 0;
+  margin-left: -100px;
+}
+
+.buttons-area > div:last-child {
+  border-radius: 5px 0 0 5px;
+  margin-right: -100px;
+}
+
+/* Show The Buttons */
+.wrapper:hover .buttons-area > div:first-child {
+  margin-left: 0;
+}
+
+.wrapper:hover .buttons-area > div:last-child {
+  margin-right: 0;
+}
+
+.buttons-area div:hover:not(div.disabled) {
+  background-color: var(--buttons-active-background-c);
+}
+
+.buttons-area div:not(div.disabled):active {
+  opacity: 0.7;
+}
+
+/* Disabled Button */
+.buttons-area > div.disabled {
+  cursor: no-drop;
+  opacity: 0.3;
+}
+
+.buttons-area div i {
+  font-size: 70px;
+}
+
+/* Pagination Area */
+.pagination-area {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+
+/* Pagination Spans */
+.pagination-area span {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--white-c);
+  margin-right: 5px;
+  transform: scale(0.5);
+  transition: 0.3s ease-in-out;
+  opacity: 0.4;
+}
+
+/* Current Active Span */
+.pagination-area span.active {
+  transform: scale(1);
+  opacity: 1;
+}
+
 .introduccion {
   margin-top: 5rem;
 }
@@ -625,6 +732,74 @@ main {
 
 .s-type-1 #s-3:checked ~ .s-nav .s-nav-3 {
   display: block;
+}
+
+.pushbar {
+  display: flex;
+  align-items: center;
+}
+
+.carousel-indicators [data-bs-target] {
+  box-sizing: content-box;
+  flex: 0 1 auto;
+  width: 17px;
+  height: 17px;
+  padding: 0;
+  margin-right: 3px;
+  margin-left: 3px;
+  text-indent: -999px;
+  cursor: pointer;
+  border-radius: 50%;
+  opacity: 0.5;
+  transition: opacity 0.6s ease;
+  border: 2px solid #c3ff00;
+  background: transparent;
+}
+
+.carousel-indicators .active {
+  opacity: 1;
+  background: #c3ff00;
+}
+
+.carousel-indicators {
+  top: -40px !important;
+}
+
+.carousel-indicators {
+  margin-right: 40%;
+  margin-bottom: 1rem;
+  margin-left: 40%;
+  list-style: none;
+}
+
+.carousel-control-prev-icon {
+  background-image: url("/media/flecha.svg");
+  transform: rotate(-90deg);
+}
+
+.carousel-control-next-icon {
+  background-image: url("/media/flecha.svg");
+  transform: rotate(90deg);
+}
+
+.carousel-control-prev, .carousel-control-next {
+  position: absolute;
+  top: -46px;
+  z-index: 1;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  width: 65%;
+  padding: 0;
+  text-align: center;
+  background: none;
+  border: 0;
+  opacity: 1;
+  transition: opacity 0.15s ease;
+}
+
+.carousel-control-prev:hover, .carousel-control-prev:focus, .carousel-control-next:hover, .carousel-control-next:focus {
+  opacity: 1;
 }
 
 #sliderPushbar {
