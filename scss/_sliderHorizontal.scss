@@ -53,7 +53,7 @@ $image3: "../media/tribuna.jpg";
   .s-item-2 {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
       url($image2);
-      background-size: cover;
+    background-size: cover;
     p {
       position: absolute;
       font-size: 17px;
@@ -75,7 +75,8 @@ $image3: "../media/tribuna.jpg";
     }
   }
   .s-item-3 {
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url($image3);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url($image3);
     background-position: center;
     p {
       position: absolute;
@@ -243,7 +244,7 @@ $image3: "../media/tribuna.jpg";
 }
 
 //pushbar edit
-.pushbar{
+.pushbar {
   display: flex;
   align-items: center;
 }
@@ -278,14 +279,15 @@ $image3: "../media/tribuna.jpg";
   list-style: none;
 }
 .carousel-control-prev-icon {
-  background-image: url('/media/flecha.svg');
+  background-image: url("/media/flecha.svg");
   transform: rotate(-90deg);
 }
 .carousel-control-next-icon {
-  background-image: url('/media/flecha.svg');
+  background-image: url("/media/flecha.svg");
   transform: rotate(90deg);
 }
-.carousel-control-prev, .carousel-control-next {
+.carousel-control-prev,
+.carousel-control-next {
   position: absolute;
   top: -46px;
   z-index: 1;
@@ -300,6 +302,24 @@ $image3: "../media/tribuna.jpg";
   opacity: 1;
   transition: opacity 0.15s ease;
 }
-.carousel-control-prev:hover, .carousel-control-prev:focus, .carousel-control-next:hover, .carousel-control-next:focus {
+.carousel-control-prev:hover,
+.carousel-control-prev:focus,
+.carousel-control-next:hover,
+.carousel-control-next:focus {
   opacity: 1;
+}
+
+.first-pushbar p:nth-child(1) {
+  color: $color-principal;
+  font-family: $font-titleItalic;
+}
+
+.first-pushbar p {
+  font-size: 0.9rem;
+  color: #fff;
+}
+@media (max-width: 1346px) {
+  .first-pushbar p {
+    font-size: 0.7rem;
+  }
 }

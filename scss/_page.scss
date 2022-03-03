@@ -133,7 +133,12 @@
     top: -32px;
     z-index: 1000;
     font-size: 2.5rem;
-    color: white;
+    color: $color-principal;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    &:hover {
+      filter: brightness(70%);
+    }
   }
   .pushbar-open {
     right: 0;
