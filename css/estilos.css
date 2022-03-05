@@ -1,6 +1,7 @@
-/* *{
+* {
   outline: 1px solid #ff009926;
-} */
+}
+
 body {
   background-color: black;
   scroll-behavior: smooth;
@@ -346,6 +347,18 @@ main {
   }
 }
 
+@media (max-width: 615px) {
+  .intro-text {
+    font-size: 19px;
+  }
+}
+
+@media (max-width: 420px) {
+  .intro-text {
+    font-size: 17px;
+  }
+}
+
 .seccion-ia {
   height: 100vh;
   background: linear-gradient(0deg, rgba(65, 64, 64, 0.5), rgba(58, 57, 57, 0.5)), url("../media//pelotafondo.jpg");
@@ -507,6 +520,7 @@ main {
   font-size: 0;
   list-style: none;
   transition: transform 1s;
+  overflow-x: hidden;
 }
 
 .s-wrap .s-item {
@@ -608,6 +622,15 @@ main {
   }
 }
 
+@media (max-width: 405px) {
+  .s-wrap .s-item-3 p:nth-child(1) {
+    font-size: 17.5px !important;
+  }
+  .s-wrap .s-item-3 p:nth-child(2) {
+    font-size: 10px;
+  }
+}
+
 @media (max-width: 857px) {
   .s-item-2 p:nth-child(2) {
     top: 28% !important;
@@ -617,7 +640,7 @@ main {
 
 @media (max-width: 666px) {
   .s-item-2 {
-    /* background-position: center; */
+    background-position: center !important;
   }
   .s-item-3 p:nth-child(2) {
     margin-top: -5px !important;
@@ -1298,6 +1321,36 @@ main {
 
 .slideNueve {
   background-image: url("/media/background2.jpg");
+}
+
+@media (max-width: 992px) {
+  .slideUno {
+    background-image: url("/media/mobile-pics/background1mobile.jpg");
+  }
+  .slideDos {
+    background-image: url("/media/mobile-pics/background1bmobile.jpg");
+  }
+  .slideTres {
+    background-image: url("/media/mobile-pics/background1mobile.jpg");
+  }
+  .slideCuatro {
+    background-image: url("/media/mobile-pics/background1bmobile.jpg");
+  }
+  .slideCinco {
+    background-image: url("/media/mobile-pics/background3mobile.jpg");
+  }
+  .slideSeis {
+    background-image: url("/media/mobile-pics/background3bmobile.jpg");
+  }
+  .slideSiete {
+    background-image: url("/media/mobile-pics/background3mobile.jpg");
+  }
+  .slideOcho {
+    background-image: url("/media/mobile-pics/background2mobile.jpg");
+  }
+  .slideNueve {
+    background-image: url("/media/mobile-pics/background2mobile.jpg");
+  }
 }
 
 .slider-containerB .action-buttonsB img {

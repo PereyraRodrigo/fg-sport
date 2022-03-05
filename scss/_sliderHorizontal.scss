@@ -30,6 +30,7 @@ $image3: "../media/tribuna.jpg";
     font-size: 0;
     list-style: none;
     transition: transform $switch-speed;
+    overflow-x: hidden;
   }
 
   .s-item {
@@ -121,6 +122,14 @@ $image3: "../media/tribuna.jpg";
     font-size: 11px;
   }
 }
+@media (max-width: 405px){
+  .s-wrap .s-item-3 p:nth-child(1){
+    font-size: 17.5px !important;
+  }
+  .s-wrap .s-item-3 p:nth-child(2) {
+    font-size: 10px;
+  }
+}
 @media (max-width: 857px) {
   .s-item-2 {
     p:nth-child(2) {
@@ -131,7 +140,7 @@ $image3: "../media/tribuna.jpg";
 }
 @media (max-width: 666px) {
   .s-item-2 {
-    /* background-position: center; */
+    background-position: center !important;
   }
   .s-item-3 {
     p:nth-child(2) {

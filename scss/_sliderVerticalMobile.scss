@@ -203,7 +203,36 @@
 .slideNueve {
   background-image: url("/media/background2.jpg");
 }
-
+//fotos background for mobile
+@media (max-width: 992px){
+  .slideUno {
+    background-image: url("/media/mobile-pics/background1mobile.jpg");
+  }
+  .slideDos {
+    background-image: url("/media/mobile-pics/background1bmobile.jpg");
+  }
+  .slideTres {
+    background-image: url("/media/mobile-pics/background1mobile.jpg");
+  }
+  .slideCuatro {
+    background-image: url("/media/mobile-pics/background1bmobile.jpg");
+  }
+  .slideCinco {
+    background-image: url("/media/mobile-pics/background3mobile.jpg");
+  }
+  .slideSeis {
+    background-image: url("/media/mobile-pics/background3bmobile.jpg");
+  }
+  .slideSiete {
+    background-image: url("/media/mobile-pics/background3mobile.jpg");
+  }
+  .slideOcho {
+    background-image: url("/media/mobile-pics/background2mobile.jpg");
+  }
+  .slideNueve {
+    background-image: url("/media/mobile-pics/background2mobile.jpg");
+  }
+}
 .slider-containerB .action-buttonsB img {
   position: absolute;
   left: 6.3%;
