@@ -100,13 +100,25 @@ $image3: "../media/tribuna.jpg";
     }
   }
 }
-@media (max-width: 1266px) {
-  .s-item-3 {
-    p {
-      font-size: 15px !important;
-      max-width: 24% !important;
-      transform: translateX(-16%);
-    }
+
+@media (max-width: 1250px) {
+  .s-wrap .s-item-3 p:nth-child(2){
+    font-size: 15px;
+  }
+}
+@media (max-width: 887px) {
+  .s-wrap .s-item-3 p:nth-child(2){
+    font-size: 13px;
+  }
+}
+@media (max-width: 615px) {
+  .s-wrap .s-item-3 p:nth-child(2){
+    font-size: 12px;
+  }
+}
+@media (max-width: 455px) {
+  .s-wrap .s-item-3 p:nth-child(2){
+    font-size: 11px;
   }
 }
 @media (max-width: 857px) {
@@ -119,14 +131,9 @@ $image3: "../media/tribuna.jpg";
 }
 @media (max-width: 666px) {
   .s-item-2 {
-    background-position: center;
+    /* background-position: center; */
   }
   .s-item-3 {
-    p {
-      font-size: 13px !important;
-      max-width: 24% !important;
-      transform: translateX(-16%);
-    }
     p:nth-child(2) {
       margin-top: -5px !important;
     }
@@ -138,13 +145,6 @@ $image3: "../media/tribuna.jpg";
       font-size: 14px !important;
       max-width: 25% !important;
       transform: translateX(-12%);
-    }
-  }
-}
-@media (max-width: 440px) {
-  .s-item-3 {
-    p {
-      font-size: 11px !important;
     }
   }
 }
@@ -183,35 +183,14 @@ $image3: "../media/tribuna.jpg";
       display: none;
       position: absolute;
       top: 9%;
-      /* padding: 5px 20px; */
-      /* transform: translateY(-50%); */
       cursor: pointer;
-
-      /* &::before,
-        &::after {
-        content: "";
-        display: block;
-        width: 8px;
-        height: 24px;
-        background-color: #c3ff00;;
-        } */
-
-      /* &::before {margin-bottom: -12px;} */
 
       &.left {
         left: -79px;
-
-        /* &::before {transform: rotate(45deg);}
-
-        &::after {transform: rotate(-45deg);} */
       }
 
       &.right {
         right: -82px;
-
-        /* &::before {transform: rotate(-45deg);}
-
-        &::after {transform: rotate(45deg);} */
       }
     }
     &-right {
@@ -246,7 +225,10 @@ $image3: "../media/tribuna.jpg";
 //pushbar edit
 .pushbar {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
+}
+.carousel-inner {
+  margin-top: 65px;
 }
 .carousel-indicators [data-bs-target] {
   box-sizing: content-box;
@@ -270,7 +252,7 @@ $image3: "../media/tribuna.jpg";
   background: #c3ff00;
 }
 .carousel-indicators {
-  top: -40px !important;
+  top: 19px !important;
 }
 .carousel-indicators {
   margin-right: 40%;
@@ -289,7 +271,7 @@ $image3: "../media/tribuna.jpg";
 .carousel-control-prev,
 .carousel-control-next {
   position: absolute;
-  top: -46px;
+  top: 10px;
   z-index: 1;
   display: flex;
   align-items: flex-start;
