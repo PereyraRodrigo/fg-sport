@@ -30,6 +30,16 @@
     max-width: 830px;
   }
 }
+@media (max-width: 615px){
+  .intro-text{
+    font-size: 19px;
+  }
+}
+@media (max-width: 420px){
+  .intro-text{
+    font-size: 17px;
+  }
+}
 
 .seccion-ia {
   height: 100vh;

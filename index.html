@@ -7,7 +7,10 @@
       content="Big data e inteligencia artificial aplicada al fútbol"
     />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1"
+    />
     <link rel="shortcut icon" href="/media/logowhite.ico" type="image/x-icon" />
     <link rel="stylesheet" href="bootstrapCompiled/css/bootstrap.css" />
     <link rel="stylesheet" href="css/estilos.css" />
@@ -438,7 +441,9 @@
               onclick="showDesktopSlider()"
               class="btn buttonOne green fs-4 fw-bolder d-none d-lg-block"
             >
-              <a href="#vertical-section" class="text-dark text-decoration-none"
+              <a
+                href="#verticalSliderDesktop"
+                class="text-dark text-decoration-none"
                 >Ver más</a
               >
             </button>
@@ -446,7 +451,9 @@
               onclick="showMobileSlider()"
               class="btn buttonOne green fs-4 fw-bolder d-lg-none"
             >
-              <a href="#footer" class="text-dark text-decoration-none"
+              <a
+                href="#verticalSliderDesktop"
+                class="text-dark text-decoration-none"
                 >Ver más</a
               >
             </button>
@@ -459,15 +466,17 @@
         <div class="slider-container">
           <div class="left-slide">
             <div class="left-text">
-              <p>DATA ANALYTICS</p>
+              <img
+                class="left-pic"
+                src="/media/dataanalytics.png"
+                alt="DATA ANALYTICS"
+              />
+              <!-- <p>DATA ANALYTICS</p> -->
             </div>
           </div>
           <div class="right-slide">
-            <div class="slideOne slideSelect row justify-content-center">
-              <div
-                id="vertical-section"
-                class="col-8 col-xl-4 col-md-8 col-sm-4 d-flex flex-column"
-              >
+            <div class="slideOne slideSelect row justify-content-center g-0">
+              <div class="col-8 col-xl-4 col-md-8 col-sm-4 d-flex flex-column">
                 <p class="verticalTitle fs-2">PROCESO DE SCOUTING CON IA</p>
                 <p class="lh-sm">
                   El universo de búsqueda se enfoca en jugadores de primera
@@ -526,7 +535,7 @@
               </div>
             </div>
             <div
-              class="slideTwo slideSelect row justify-content-center text-center align-items-center"
+              class="slideTwo slideSelect row justify-content-center text-center align-items-center g-0"
             >
               <div class="col-8 d-flex flex-column justify-content-center">
                 <p class="verticalTitle fs-2">SIMILITUD DE EQUIPOS TOP 5</p>
@@ -558,22 +567,22 @@
               </div>
             </div>
             <div
-              class="slideThree slideSelect d-flex justify-content-center row"
+              class="slideThree slideSelect d-flex justify-content-center row g-0"
             >
               <div class="slideThreeImage col-8"></div>
             </div>
             <div
-              class="slideFour slideSelect d-flex justify-content-center row"
+              class="slideFour slideSelect d-flex justify-content-center row g-0"
             >
               <div class="slideFourImage col-8"></div>
             </div>
             <div
-              class="slideFive slideSelect d-flex justify-content-center row"
+              class="slideFive slideSelect d-flex justify-content-center row g-0"
             >
               <div class="slideFiveImage col-8"></div>
             </div>
             <div
-              class="slideSix slideSelect row justify-content-center text-center align-items-center"
+              class="slideSix slideSelect row justify-content-center text-center align-items-center g-0"
             >
               <div class="col-8">
                 <p class="verticalTitle fs-2">
@@ -619,14 +628,19 @@
         <div class="slider-containerB">
           <div class="left-slideB">
             <div class="left-text">
-              <p>DATA ANALYTICS</p>
+              <!-- <p>DATA ANALYTICS</p> -->
+              <img
+                class="left-pic"
+                src="/media/dataanalytics.png"
+                alt="DATA ANALYTICS"
+              />
             </div>
           </div>
           <div class="right-slideB">
             <div
-              class="slideUno slideSelectB row justify-content-center align-items-center"
+              class="slideUno slideSelectB row justify-content-center align-items-center g-0"
             >
-              <div class="col-8 d-flex flex-column">
+              <div class="col-8 d-flex flex-column ms-5">
                 <p class="verticalTitle fs-2">PROCESO DE SCOUTING CON IA</p>
                 <p>
                   El universo de búsqueda se enfoca en jugadores de primera
@@ -654,10 +668,10 @@
               </div>
             </div>
             <div
-              class="slideDos slideSelectB row justify-content-center align-items-center"
+              class="slideDos slideSelectB row justify-content-center align-items-center g-0"
             >
               <div
-                class="col-8 d-flex flex-column justify-content-center verticalScroll"
+                class="col-8 d-flex flex-column justify-content-center verticalScroll ms-5"
               >
                 <p class="verticalTitle fs-2">PROCESO DE SCOUTING CON IA</p>
                 <p>
@@ -682,9 +696,9 @@
               </div>
             </div>
             <div
-              class="slideTres slideSelectB d-flex justify-content-center align-items-center row"
+              class="slideTres slideSelectB d-flex justify-content-center align-items-center row g-0"
             >
-              <div class="col-8 verticalScroll">
+              <div class="col-8 verticalScroll ms-5">
                 <p class="verticalTitle fs-2">TOP 15</p>
                 <img
                   class="verticalGrafico"
@@ -694,10 +708,9 @@
               </div>
             </div>
             <div
-              class="slideCuatro slideSelectB d-flex justify-content-center row"
+              class="slideCuatro slideSelectB d-flex justify-content-center row g-0"
             >
-              <!-- <div class="slideFourImage col-8"></div> -->
-              <div class="col-8 d-flex flex-column justify-content-center">
+              <div class="col-8 d-flex flex-column justify-content-center ms-5">
                 <p class="verticalTitle fs-2">SIMILITUD DE EQUIPOS TOP 5</p>
                 <div class="verticalScroll">
                   <img
@@ -725,24 +738,24 @@
               </div>
             </div>
             <div
-              class="slideCinco slideSelectB d-flex justify-content-center row"
+              class="slideCinco slideSelectB d-flex justify-content-center row g-0"
             >
-              <div class="slideCincoImage col-8"></div>
+              <div class="slideCincoImage col-8 ms-5"></div>
             </div>
             <div
-              class="slideSeis slideSelectB d-flex justify-content-center row"
+              class="slideSeis slideSelectB d-flex justify-content-center row g-0"
             >
-              <div class="slideSeisImage col-8"></div>
+              <div class="slideSeisImage col-8 ms-5 g-0"></div>
             </div>
             <div
-              class="slideSiete slideSelectB d-flex justify-content-center row"
+              class="slideSiete slideSelectB d-flex justify-content-center row g-0"
             >
-              <div class="slideSieteImage col-8"></div>
+              <div class="slideSieteImage col-8 ms-5"></div>
             </div>
             <div
-              class="slideOcho slideSelectB justify-content-center text-center align-items-center row"
+              class="slideOcho slideSelectB justify-content-center text-center align-items-center row g-0"
             >
-              <div class="col-9">
+              <div class="col-8 ms-5">
                 <p class="verticalTitle fs-2">
                   COMPARACION DE PRECIOS ENTRE CANDIDATOS Y JUGADORES
                 </p>
@@ -755,9 +768,9 @@
               </div>
             </div>
             <div
-              class="slideNueve slideSelectB justify-content-center align-items-center row"
+              class="slideNueve slideSelectB justify-content-center align-items-center row g-0"
             >
-              <div class="col-8">
+              <div class="col-8 ms-5">
                 <p class="verticalTitle fs-2">
                   COMPARACION DE PRECIOS ENTRE CANDIDATOS Y JUGADORES
                 </p>
@@ -793,7 +806,7 @@
       <!--Slider Mobile-->
     </div>
 
-    <footer id="s" class="container footer">
+    <footer class="container footer">
       <div class="row text-white my-5 lh-lg">
         <div class="col-md-3 my-2">
           <p class="text-center">FG SPORT <br />hermidafrancisco@hotmail.com</p>
