@@ -331,7 +331,7 @@
             </p>
           </div>
           <div id="btn-pushbar">
-            <button class="btn buttonOne green fs-4 fw-bolder">Ver mas</button>
+            <button class="btn buttonOne green fs-4 fw-bolder">Ver más</button>
           </div>
         </div>
       </section>
@@ -438,13 +438,17 @@
               onclick="showDesktopSlider()"
               class="btn buttonOne green fs-4 fw-bolder d-none d-lg-block"
             >
-              <a class="text-dark text-decoration-none">Ver más</a>
+              <a href="#vertical-section" class="text-dark text-decoration-none"
+                >Ver más</a
+              >
             </button>
             <button
               onclick="showMobileSlider()"
               class="btn buttonOne green fs-4 fw-bolder d-lg-none"
             >
-              <a class="text-dark text-decoration-none">Ver más</a>
+              <a href="#footer" class="text-dark text-decoration-none"
+                >Ver más</a
+              >
             </button>
           </div>
         </div>
@@ -460,7 +464,10 @@
           </div>
           <div class="right-slide">
             <div class="slideOne slideSelect row justify-content-center">
-              <div class="col-8 col-xl-4 col-md-8 col-sm-4 d-flex flex-column">
+              <div
+                id="vertical-section"
+                class="col-8 col-xl-4 col-md-8 col-sm-4 d-flex flex-column"
+              >
                 <p class="verticalTitle fs-2">PROCESO DE SCOUTING CON IA</p>
                 <p class="lh-sm">
                   El universo de búsqueda se enfoca en jugadores de primera
@@ -786,7 +793,7 @@
       <!--Slider Mobile-->
     </div>
 
-    <footer class="container footer">
+    <footer id="s" class="container footer">
       <div class="row text-white my-5 lh-lg">
         <div class="col-md-3 my-2">
           <p class="text-center">FG SPORT <br />hermidafrancisco@hotmail.com</p>
